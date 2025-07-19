@@ -1,3 +1,45 @@
+# 📱 React Native Lessons — Meta Course Daily Progress
+
+This repository exists to document my daily learning journey through the **React Native course by Meta on Coursera**:  
+👉 [React Native - Meta/Coursera](https://www.coursera.org/learn/react-native-course/)
+
+## 🎯 Purpose
+
+The goal of this repo is to:
+- Track and reflect on my daily progress during the course 📅
+- Reinforce concepts through hands-on coding and notes 💡
+- Build a consistent learning habit via GitHub commits 📥
+- Create a portfolio-ready trail of practical React Native examples 🚀
+
+## 🧭 What’s Inside
+
+Each folder or file corresponds to a specific lesson or concept from the course. I include:
+- Notes, takeaways, and explanations in markdown
+- Practice code and mini-projects with annotations
+- Occasional side experiments to deepen understanding
+
+## 💡 Why Public?
+
+By making this repo open, I hope to:
+- Share my learning journey with others
+- Help future learners find structured guidance
+- Invite feedback from experienced developers
+- Hold myself accountable through transparency
+
+## 🛠 Tech Stack
+
+- React Native
+- TypeScript (where applicable)
+- Git + GitHub for daily tracking
+
+## 🚧 Status
+
+Currently in progress — I commit after each lesson, so stay tuned for new updates!
+
+---
+
+Feel free to fork or star this repo if you're also taking the course or want to learn React Native together! Let’s grow together 💬
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
