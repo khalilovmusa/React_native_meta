@@ -10,12 +10,12 @@ export default StyleSheet.create({
       },
       welcome_text: {
          padding: 40,
-         fontSize: 30,
+         fontSize: 50,
          color: '#EDEFEE',
          textAlign: 'center',
       },
       description: {
-         fontSize: 24,
+         fontSize: 40,
          padding: 20,
          marginVertical: 8,
          color: '#EDEFEE',
