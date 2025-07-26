@@ -2,10 +2,12 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
    container: {
-      flex: 0.75
+      flex: 0.75,
+      flexDirection: 'row',
+      justifyContent: 'space-between',
    },
    item_text: {
-      fontSize: 50,
+      fontSize: 30,
       color: '#fff'
    }
 })
