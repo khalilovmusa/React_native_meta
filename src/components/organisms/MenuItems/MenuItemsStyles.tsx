@@ -6,7 +6,7 @@ const yellow = '#F4CE14'
 
 export default StyleSheet.create({
    menu_items_wrapper: {
-      flex: 0.75,
+      flex: 1,
       padding: 20,
       paddingRight: 10
    },
@@ -18,13 +18,14 @@ export default StyleSheet.create({
       fontSize: 40, 
       flexWrap: 'wrap', 
       color: 'white', 
+      backgroundColor: 'orangered'
    },
    menu_items: {
       color: yellow, 
       fontSize: 15
    },
    seperator_styles: {
-      borderWidth: 1,
+      borderBottomWidth: 1,
       borderColor: '#EDEFEE'
    },
    menu_footer: {
