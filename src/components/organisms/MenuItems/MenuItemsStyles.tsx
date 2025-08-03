@@ -6,6 +6,7 @@ const yellow = '#F4CE14'
 
 export default StyleSheet.create({
    menu_items_wrapper: {
+      backgroundColor: green,
       flex: 1,
       padding: 20,
       paddingRight: 10
@@ -35,5 +36,20 @@ export default StyleSheet.create({
       color: '#fff',
       textAlign: 'center',
       textAlignVertical: 'center'
+   },
+   button: {
+      fontSize: 22,
+      padding: 10,
+      marginVertical: 8,
+      margin: 40,
+      backgroundColor: '#EDEFEE',
+      borderColor: '#EDEFEE',
+      borderWidth: 2,
+      borderRadius: 12
+   },
+   buttonText: {
+      color: '#333333',
+      textAlign: 'center',
+      fontSize: 32
    }
 })

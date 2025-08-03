@@ -1,8 +1,9 @@
-import { View, Text, FlatList, SectionList } from "react-native"
+import { View, Text, SectionList, Pressable } from "react-native"
 import styles from './MenuItemsStyles'
 // import menuItemsToDisplay from '../../../../store/menuItems'
 import Item from "../../molecules/Item/Item"
-import React from "react"
+import React, { useState } from "react"
+import LittleLemonDescription from "../LittleLemonDescription/LittleLemonDescription"
 
 // const menuItemsToDisplay = ['Hummus \n Moutabal \n Falafel \n Marinated Olives \n Kofta \n Eggplant \n Salad \n Lentil Burger \n Smoked Salmon \n Kofta Burger \n Turkish Kebab \n Fries \n Buttered Rice \n Bread Sticks \n Pita Pocket \n Lentil Soup \n Greek Salad \n Rice Pilaf \n Baklava \n Tartufo \n Tiramsu \n Pannan Cotta',
 // ]
@@ -29,14 +30,14 @@ import React from "react"
 
 //TODO=> In this part we will render the items using FlatList component
 
-interface RenderItemProps {
-   name: string, 
-   price: string 
-}
+// interface RenderItemProps {
+//    name: string, 
+//    price: string 
+// }
 
 const Seperator = () => <View style={styles.seperator_styles} />
 
-const MenuHeader = () => <Text style={styles.view_menu} >View menu</Text>
+// const MenuHeader = () => <Text style={styles.view_menu} >View menu</Text>
 
 const MenuFooter = () => (
    <Text style={styles.menu_footer}>
@@ -101,6 +102,7 @@ const menuItemsToDisplaySection = [
 ];
 
 const MenuItems = () => {
+  const [ showMenu, setShowMenu ] = useState(false)
 
   const renderItem = ({ item }: { item: string}) => <Item name={item} />
 
@@ -110,14 +112,23 @@ const MenuItems = () => {
 
   return(
       <View style={styles.menu_items_wrapper}>
-      <SectionList 
+      <Pressable 
+        style={styles.button}
+        onPress={() => setShowMenu(!showMenu)}
+        >
+          <Text style={styles.buttonText}>
+            {showMenu ? 'Home' : 'View menu'}
+          </Text>
+      </Pressable>
+      {!showMenu && ( <LittleLemonDescription />)}
+      {showMenu && (<SectionList 
             keyExtractor={(item, index) => item + index}
             sections={menuItemsToDisplaySection} //!=> The array that holds data
             renderItem={renderItem} //!=> item renderer function
             renderSectionHeader={renderSectionHeader} //!=> Render section headers
             ItemSeparatorComponent={Seperator} //?=> Used to seperate the list items from each other
             ListFooterComponent={MenuFooter} //?=> Used to add footer to the end of the SectionList component
-          />
+          />)}
       </View>
   )
 }
