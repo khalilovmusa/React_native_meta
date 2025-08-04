@@ -15,7 +15,7 @@ export default StyleSheet.create({
       flex: 1,
       padding: 24,
       marginTop: 25,
-      backgroundColor: '#fff'
+      backgroundColor: '#fff',
    },
    title: {
       marginTop: 16,
@@ -26,11 +26,16 @@ export default StyleSheet.create({
       fontWeight: 'bold'
    },
    image: {
-      height: 300,
-      width: 300,
+      height: 400,
+      width: '100%',
       resizeMode: 'cover',
       borderWidth: 2,
       borderColor: 'yellow',
       borderRadius: 8
+   },
+   backgroundImage: {
+      flex: 1,
+      height: 300,
+      justifyContent: 'center',
    }
 })

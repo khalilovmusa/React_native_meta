@@ -1,4 +1,4 @@
-import { Image, Text, ScrollView } from "react-native"
+import { Image, Text, ScrollView, ImageBackground } from "react-native"
 import styles from './styles'
 
 const WelcomePageWLogo = () => {
@@ -12,9 +12,11 @@ const WelcomePageWLogo = () => {
             accessibilityLabel="Little Lemon Header"
             //!=> Once the image is set to be accessible, it is time to provide an accessible label for the image. This is the text that the screen reader reads when the user interacts with the image. Make sure to give a meaningful and descriptive name to the prop.
          />
+         <ImageBackground resizeMode="contain" style={styles.backgroundImage} source={require('../../../assets/littleLemonBackground.png')}>
          <Text style={styles.title}>
             Little lemon, your local Mediterranean Bistro
          </Text>
+         </ImageBackground>
          <Image 
             source={require("../../../assets/pic1.png")}
             style={styles.image}
