@@ -1,6 +1,8 @@
 // import WelcomeScreen from './src/components/organisms/WelcomeScreen/WelcomeScreen';
 
-import WelcomePageWLogo from "./src/components/learncomponents/WelcomePageWLogo";
+import ToggleTheme from "./src/hooks/learningHooks/useColorSheme";
+
+// import WelcomePageWLogo from "./src/components/learncomponents/WelcomePageWLogo";
 
 // import MenuItems from "./src/components/organisms/MenuItems/MenuItems";
 
@@ -11,7 +13,8 @@ function App() {
 
   return (
     <>
-    <WelcomePageWLogo />
+    <ToggleTheme />
+    {/* <WelcomePageWLogo /> */}
     {/* <WelcomeScreen /> */}
     {/* <FeedbackForm /> */}
     {/* <LoginScreen /> */}
