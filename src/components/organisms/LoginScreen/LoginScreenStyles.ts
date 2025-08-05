@@ -29,7 +29,7 @@ export default StyleSheet.create({
     borderColor: '#EDEFEE',
     backgroundColor: '#F4CE14',
   },
-   button: {
+  button: {
       fontSize: 22,
       padding: 10,
       marginVertical: 8,
@@ -38,10 +38,10 @@ export default StyleSheet.create({
       borderColor: '#EDEFEE',
       borderWidth: 2,
       borderRadius: 12
-   },
-   buttonText: {
+  },
+  buttonText: {
       color: '#333333',
       textAlign: 'center',
       fontSize: 32
-   }
+  }
 });

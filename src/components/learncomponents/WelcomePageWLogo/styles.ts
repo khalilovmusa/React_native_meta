@@ -37,5 +37,20 @@ export default StyleSheet.create({
       flex: 1,
       height: 300,
       justifyContent: 'center',
+   },
+   button: {
+      fontSize: 22,
+      padding: 10,
+      marginVertical: 8,
+      margin: 40,
+      backgroundColor: '#EDEFEE',
+      borderColor: '#EDEFEE',
+      borderWidth: 2,
+      borderRadius: 12
+   },
+   buttonText: {
+      color: '#333333',
+      textAlign: 'center',
+      fontSize: 32
    }
 })

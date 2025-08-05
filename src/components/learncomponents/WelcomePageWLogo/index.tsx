@@ -1,7 +1,8 @@
-import { Image, Text, ScrollView, ImageBackground } from "react-native"
+import { Image, Text, ScrollView, ImageBackground, Pressable } from "react-native"
 import styles from './styles'
 
-const WelcomePageWLogo = () => {
+
+const WelcomePageWLogo = ({ navigation }) => {
    return(
       <ScrollView style={styles.container}>
          <Image 
@@ -17,6 +18,15 @@ const WelcomePageWLogo = () => {
             Little lemon, your local Mediterranean Bistro
          </Text>
          </ImageBackground>
+         <Pressable 
+         onPress={() => {
+            navigation.navigate('Login')
+         }}
+         style={styles.button}>
+            <Text style={styles.buttonText}>
+               Log in
+            </Text>
+         </Pressable>
          <Image 
             source={require("../../../assets/pic1.png")}
             style={styles.image}
